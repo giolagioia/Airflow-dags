@@ -28,6 +28,7 @@ def loadtoXCOM(command):
 
 def decideWhichTask(**kwargs):
     stepvalue = kwargs['ti'].xcom_pull(key='return_value')
+    #there is a problem with the stepvalue, it always return step2
     stepint = stepvalue.split("step")
     stepint = int(stepint[1])
 
