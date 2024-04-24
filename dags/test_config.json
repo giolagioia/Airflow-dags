@@ -1,9 +1,0 @@
-{
-    "step1":
-    {"command":"echo 'step1'"},
-    "step2":
-    {"command":"echo 'step2'"},
-    "step3":
-    {"command":"echo 'step3'"},
-    
-}
