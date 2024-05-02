@@ -3116,3 +3116,10 @@
 [2024-05-02 11:25:40,530] {logging_mixin.py:104} INFO - [2024-05-02 11:25:40,530] {dag.py:1824} INFO - Sync 1 DAGs
 [2024-05-02 11:25:40,545] {logging_mixin.py:104} INFO - [2024-05-02 11:25:40,545] {dag.py:2280} INFO - Setting next_dagrun for json_file to 2024-05-01 16:09:31.898112+00:00
 [2024-05-02 11:25:40,557] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/json_file.py took 0.101 seconds
+[2024-05-02 11:29:15,909] {scheduler_job.py:182} INFO - Started process (PID=17217) to work on /opt/airflow/dags/json_file.py
+[2024-05-02 11:29:15,912] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/json_file.py for tasks to queue
+[2024-05-02 11:29:15,914] {logging_mixin.py:104} INFO - [2024-05-02 11:29:15,913] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/json_file.py
+[2024-05-02 11:29:15,970] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['json_file']) retrieved from /opt/airflow/dags/json_file.py
+[2024-05-02 11:29:16,019] {logging_mixin.py:104} INFO - [2024-05-02 11:29:16,019] {dag.py:1824} INFO - Sync 1 DAGs
+[2024-05-02 11:29:16,048] {logging_mixin.py:104} INFO - [2024-05-02 11:29:16,048] {dag.py:2280} INFO - Setting next_dagrun for json_file to 2024-05-01 16:09:31.898112+00:00
+[2024-05-02 11:29:16,085] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/json_file.py took 0.183 seconds

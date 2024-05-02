@@ -4482,3 +4482,17 @@ AttributeError: type object 'TriggerRule' has no attribute 'one_success'
 [2024-05-02 11:25:30,961] {logging_mixin.py:104} INFO - [2024-05-02 11:25:30,961] {dag.py:1824} INFO - Sync 1 DAGs
 [2024-05-02 11:25:30,975] {logging_mixin.py:104} INFO - [2024-05-02 11:25:30,975] {dag.py:2280} INFO - Setting next_dagrun for json_file_chain to 2024-05-02 07:36:33.282126+00:00
 [2024-05-02 11:25:30,986] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/json_file_chain.py took 0.081 seconds
+[2024-05-02 11:29:10,371] {scheduler_job.py:182} INFO - Started process (PID=17195) to work on /opt/airflow/dags/json_file_chain.py
+[2024-05-02 11:29:10,374] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/json_file_chain.py for tasks to queue
+[2024-05-02 11:29:10,376] {logging_mixin.py:104} INFO - [2024-05-02 11:29:10,376] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/json_file_chain.py
+[2024-05-02 11:29:10,474] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['json_file_chain']) retrieved from /opt/airflow/dags/json_file_chain.py
+[2024-05-02 11:29:10,559] {logging_mixin.py:104} INFO - [2024-05-02 11:29:10,559] {dag.py:1824} INFO - Sync 1 DAGs
+[2024-05-02 11:29:10,631] {logging_mixin.py:104} INFO - [2024-05-02 11:29:10,630] {dag.py:2280} INFO - Setting next_dagrun for json_file_chain to 2024-05-02 07:36:33.282126+00:00
+[2024-05-02 11:29:10,668] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/json_file_chain.py took 0.304 seconds
+[2024-05-02 11:29:41,093] {scheduler_job.py:182} INFO - Started process (PID=17228) to work on /opt/airflow/dags/json_file_chain.py
+[2024-05-02 11:29:41,096] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/json_file_chain.py for tasks to queue
+[2024-05-02 11:29:41,098] {logging_mixin.py:104} INFO - [2024-05-02 11:29:41,097] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/json_file_chain.py
+[2024-05-02 11:29:41,157] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['json_file_chain']) retrieved from /opt/airflow/dags/json_file_chain.py
+[2024-05-02 11:29:41,227] {logging_mixin.py:104} INFO - [2024-05-02 11:29:41,227] {dag.py:1824} INFO - Sync 1 DAGs
+[2024-05-02 11:29:41,259] {logging_mixin.py:104} INFO - [2024-05-02 11:29:41,259] {dag.py:2280} INFO - Setting next_dagrun for json_file_chain to 2024-05-02 07:36:33.282126+00:00
+[2024-05-02 11:29:41,280] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/json_file_chain.py took 0.193 seconds
