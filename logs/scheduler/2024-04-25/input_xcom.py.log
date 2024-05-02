@@ -1,0 +1,21 @@
+[2024-04-25 20:55:43,338] {scheduler_job.py:182} INFO - Started process (PID=10566) to work on /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:55:43,343] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/input_xcom.py for tasks to queue
+[2024-04-25 20:55:43,362] {logging_mixin.py:104} INFO - [2024-04-25 20:55:43,362] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:55:43,749] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['input_xcom']) retrieved from /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:55:44,145] {logging_mixin.py:104} INFO - [2024-04-25 20:55:44,145] {dag.py:1824} INFO - Sync 1 DAGs
+[2024-04-25 20:55:44,321] {logging_mixin.py:104} INFO - [2024-04-25 20:55:44,320] {dag.py:2280} INFO - Setting next_dagrun for input_xcom to 2024-04-14 00:00:00+00:00
+[2024-04-25 20:55:44,460] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/input_xcom.py took 1.155 seconds
+[2024-04-25 20:56:15,210] {scheduler_job.py:182} INFO - Started process (PID=10604) to work on /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:56:15,240] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/input_xcom.py for tasks to queue
+[2024-04-25 20:56:15,269] {logging_mixin.py:104} INFO - [2024-04-25 20:56:15,269] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:56:16,158] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['input_xcom']) retrieved from /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:56:16,317] {logging_mixin.py:104} INFO - [2024-04-25 20:56:16,317] {dag.py:1824} INFO - Sync 1 DAGs
+[2024-04-25 20:56:16,469] {logging_mixin.py:104} INFO - [2024-04-25 20:56:16,469] {dag.py:2280} INFO - Setting next_dagrun for input_xcom to 2024-04-14 00:00:00+00:00
+[2024-04-25 20:56:16,664] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/input_xcom.py took 1.460 seconds
+[2024-04-25 20:56:50,719] {scheduler_job.py:182} INFO - Started process (PID=10645) to work on /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:56:50,735] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/input_xcom.py for tasks to queue
+[2024-04-25 20:56:50,748] {logging_mixin.py:104} INFO - [2024-04-25 20:56:50,747] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:56:51,238] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['input_xcom']) retrieved from /opt/airflow/dags/input_xcom.py
+[2024-04-25 20:56:51,326] {logging_mixin.py:104} INFO - [2024-04-25 20:56:51,326] {dag.py:1824} INFO - Sync 1 DAGs
+[2024-04-25 20:56:51,564] {logging_mixin.py:104} INFO - [2024-04-25 20:56:51,564] {dag.py:2280} INFO - Setting next_dagrun for input_xcom to 2024-04-14 00:00:00+00:00
+[2024-04-25 20:56:51,627] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/input_xcom.py took 0.921 seconds

@@ -1,0 +1,24 @@
+[2024-04-25 20:55:40,704] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: json_file.step3_JsonRead 2024-04-24T17:34:06.305463+00:00 [queued]>
+[2024-04-25 20:55:40,809] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: json_file.step3_JsonRead 2024-04-24T17:34:06.305463+00:00 [queued]>
+[2024-04-25 20:55:40,819] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2024-04-25 20:55:40,825] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2024-04-25 20:55:40,826] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2024-04-25 20:55:41,041] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): step3_JsonRead> on 2024-04-24T17:34:06.305463+00:00
+[2024-04-25 20:55:41,935] {standard_task_runner.py:52} INFO - Started process 498 to run task
+[2024-04-25 20:55:42,797] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'json_file', 'step3_JsonRead', '2024-04-24T17:34:06.305463+00:00', '--job-id', '14018', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/json_file.py', '--cfg-path', '/tmp/tmpofqm8pq4', '--error-file', '/tmp/tmpi0bbpx0w']
+[2024-04-25 20:55:42,849] {standard_task_runner.py:77} INFO - Job 14018: Subtask step3_JsonRead
+[2024-04-25 20:55:43,536] {logging_mixin.py:104} INFO - Running <TaskInstance: json_file.step3_JsonRead 2024-04-24T17:34:06.305463+00:00 [running]> on host c6f0c13ba6da
+[2024-04-25 20:55:44,277] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=json_file
+AIRFLOW_CTX_TASK_ID=step3_JsonRead
+AIRFLOW_CTX_EXECUTION_DATE=2024-04-24T17:34:06.305463+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-04-24T17:34:06.305463+00:00
+[2024-04-25 20:55:44,311] {python.py:118} INFO - Done. Returned value was: echo 'step3'
+[2024-04-25 20:55:44,683] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=json_file, task_id=step3_JsonRead, execution_date=20240424T173406, start_date=20240425T205540, end_date=20240425T205544
+[2024-04-25 20:55:48,762] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2024-04-25 20:55:48,784] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 498
+[2024-04-25 20:56:08,332] {taskinstance.py:1265} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-04-25 20:56:08,561] {process_utils.py:66} INFO - Process psutil.Process(pid=498, status='terminated', exitcode=1, started='20:55:41') (498) terminated with exit code 1
