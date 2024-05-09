@@ -26,11 +26,13 @@ def loadtoXCOM(command):
     for key, value in command.items():
         return value
 
-def decideWhichTask(**kwargs):
-    stepvalue = kwargs['ti'].xcom_pull(key='return_value')
-    #there is a problem with the stepvalue, it always return step2
-    stepint = stepvalue.split("step")
-    stepint = int(stepint[1])
+def decideWhichTask(step, **kwargs):
+    #stepvalue = kwargs['ti'].xcom_pull(key='return_value')
+    task_id = f"{step}_BashCommand"
+    stepvalue = kwargs['ti'].xcom_pull(key='return_value', task_ids=task_id)
+    #there is a problem with the stepvalue, it always returns a random step
+    #stepint = stepvalue.split("step")
+    stepint = int(stepvalue[-1])
 
     if stepint % 2 == 0:
         return stepvalue+"_dummy_pari"
@@ -60,6 +62,7 @@ with DAG(
         Decidewhichtask = BranchPythonOperator(
             task_id=step+'_Decidewhichtask',
             python_callable=decideWhichTask,
+            op_kwargs={"step": step}
         )
 
         Dummy_pari = DummyOperator(
@@ -70,11 +73,16 @@ with DAG(
             task_id=step+'_dummy_dispari'
         )
 
+        Final = DummyOperator(
+            task_id=step+'_final'
+        )
+
         '''
         BranchPO che estrae da xcom del bash operator (da returned value) x di "echo x",
         if x%2 == 0  -> dummy operator "step_x pari"
         else  -> dummy operator "step_x dispari"
         '''
 
-        jsonRead >> BashCommand >> Decidewhichtask >> [Dummy_pari, Dummy_dispari]
+        jsonRead >> BashCommand >> Decidewhichtask >> Dummy_pari >> Final
+        jsonRead >> BashCommand >> Decidewhichtask >> Dummy_dispari >> Final
 
