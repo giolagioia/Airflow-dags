@@ -1,0 +1,24 @@
+[2024-05-02 07:36:50,552] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: json_file_chain.step3_Decidewhichtask 2024-05-02T07:35:07.638548+00:00 [queued]>
+[2024-05-02 07:36:50,609] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: json_file_chain.step3_Decidewhichtask 2024-05-02T07:35:07.638548+00:00 [queued]>
+[2024-05-02 07:36:50,609] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-02 07:36:50,610] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2024-05-02 07:36:50,610] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-02 07:36:50,704] {taskinstance.py:1089} INFO - Executing <Task(BranchPythonOperator): step3_Decidewhichtask> on 2024-05-02T07:35:07.638548+00:00
+[2024-05-02 07:36:50,785] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'json_file_chain', 'step3_Decidewhichtask', '2024-05-02T07:35:07.638548+00:00', '--job-id', '14139', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/json_file_chain.py', '--cfg-path', '/tmp/tmpdf5k8tqg', '--error-file', '/tmp/tmpjevcshye']
+[2024-05-02 07:36:50,790] {standard_task_runner.py:77} INFO - Job 14139: Subtask step3_Decidewhichtask
+[2024-05-02 07:36:50,746] {standard_task_runner.py:52} INFO - Started process 182 to run task
+[2024-05-02 07:36:51,285] {logging_mixin.py:104} INFO - Running <TaskInstance: json_file_chain.step3_Decidewhichtask 2024-05-02T07:35:07.638548+00:00 [running]> on host c6f0c13ba6da
+[2024-05-02 07:36:51,536] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=json_file_chain
+AIRFLOW_CTX_TASK_ID=step3_Decidewhichtask
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-02T07:35:07.638548+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-02T07:35:07.638548+00:00
+[2024-05-02 07:36:51,558] {python.py:118} INFO - Done. Returned value was: step3_dummy_dispari
+[2024-05-02 07:36:51,563] {skipmixin.py:124} INFO - Following branch step3_dummy_dispari
+[2024-05-02 07:36:51,603] {skipmixin.py:155} INFO - Skipping tasks ['step3_dummy_pari']
+[2024-05-02 07:36:51,887] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=json_file_chain, task_id=step3_Decidewhichtask, execution_date=20240502T073507, start_date=20240502T073650, end_date=20240502T073651
+[2024-05-02 07:36:52,039] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-02 07:36:52,075] {local_task_job.py:146} INFO - Task exited with return code 0

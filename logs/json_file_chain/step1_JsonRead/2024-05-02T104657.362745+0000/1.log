@@ -1,0 +1,22 @@
+[2024-05-02 10:46:57,917] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: json_file_chain.step1_JsonRead 2024-05-02T10:46:57.362745+00:00 [queued]>
+[2024-05-02 10:46:57,938] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: json_file_chain.step1_JsonRead 2024-05-02T10:46:57.362745+00:00 [queued]>
+[2024-05-02 10:46:57,939] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-02 10:46:57,940] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2024-05-02 10:46:57,940] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-02 10:46:57,951] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): step1_JsonRead> on 2024-05-02T10:46:57.362745+00:00
+[2024-05-02 10:46:57,958] {standard_task_runner.py:52} INFO - Started process 324 to run task
+[2024-05-02 10:46:57,963] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'json_file_chain', 'step1_JsonRead', '2024-05-02T10:46:57.362745+00:00', '--job-id', '14200', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/json_file_chain.py', '--cfg-path', '/tmp/tmpw8g0zcce', '--error-file', '/tmp/tmp7wzqngug']
+[2024-05-02 10:46:57,964] {standard_task_runner.py:77} INFO - Job 14200: Subtask step1_JsonRead
+[2024-05-02 10:46:58,030] {logging_mixin.py:104} INFO - Running <TaskInstance: json_file_chain.step1_JsonRead 2024-05-02T10:46:57.362745+00:00 [running]> on host c6f0c13ba6da
+[2024-05-02 10:46:58,079] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=json_file_chain
+AIRFLOW_CTX_TASK_ID=step1_JsonRead
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-02T10:46:57.362745+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-02T10:46:57.362745+00:00
+[2024-05-02 10:46:58,082] {python.py:118} INFO - Done. Returned value was: echo 'step1'
+[2024-05-02 10:46:58,113] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=json_file_chain, task_id=step1_JsonRead, execution_date=20240502T104657, start_date=20240502T104657, end_date=20240502T104658
+[2024-05-02 10:46:58,160] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-02 10:46:58,178] {local_task_job.py:146} INFO - Task exited with return code 0
